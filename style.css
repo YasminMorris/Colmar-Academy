@@ -1,0 +1,392 @@
+html {
+    margin: 0px;
+}
+
+.school-name, nav, h1, h2, h3, h4, footer  {
+    font-family: "Roboto", "Dubai", sans-serif;
+}
+
+p, caption, h5 {
+    font-family: "Calibri", "Arial", sans-serif;
+    color: rgba(37, 37, 37, 0.842);
+}
+
+/* Header */
+header {
+    height: 64px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header p {
+    font-weight: 300;
+    color: lightgray;
+    line-height: 32px;
+}
+
+.mobileLogoandName {
+    width: 100%;
+    align-content: center;
+    border: 1px black solid;
+}
+
+strong {
+    font-weight: 700;
+    color: black;
+}
+
+.logoAndName, nav {
+    display: inline-flex;
+    padding: 0px 24px;
+}
+
+nav {
+    word-spacing: 16px;
+}
+
+li {
+    display: inline-flex;
+}
+
+a {
+    padding-left:16px;
+}
+
+@media only screen and (min-width: 601px) {
+    .mobileLogoandName {
+        display: none;
+    } 
+}
+
+@media only screen and (max-width: 600px) {
+    .logoAndName, ul {
+        display: none;
+    } 
+}
+
+
+/* Banner */
+.banner {
+    position: relative;
+    background-color: lightgray;
+    display: flex;
+    width: 100%;
+    top: 56px;
+    margin: 0px;
+    /* left: -8px; */
+}
+
+.bannerImage {
+    width: 60%;
+    height: auto;
+    margin: 32px 24px;
+    /* padding-bottom: 32px; */
+}
+
+.bannerImage, .bannerText {
+    display: inline-flex;
+}
+
+.bannerText {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 25%;
+    padding-left: 24px;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 46px;
+    color: rgba(37, 37, 37, 0.842);
+}
+
+.bannerText h3 {
+    font-size: 25px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.start-button {
+    background-color: rgba(37, 37, 37, 0.842);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    font-weight: 200;
+}
+
+/* Information Section */
+.schoolInformation {
+    display: flex;
+    position:relative;
+    top: 56px;
+    /* left: -8px; */
+    padding-bottom: 32px;
+    
+}
+
+.mainInformation {
+    width: 66%;
+    margin: 32px 24px;
+}
+
+.mainImage {
+    width: 100%;
+    height: auto;
+    /* margin: 32px 24px; */
+}
+
+.mainImage, p {
+    font-size: 22px;
+}
+
+.extraInformation {
+    width: 40%;
+    height: auto;
+    /* margin-top: 16px; */
+    border-left: 1px lightgray solid;
+}
+
+.infoImages {
+    width: 35%;
+    height: auto;
+    padding: 16px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    /* margin: 16px; */
+}
+
+.infoImages .infoImageText {
+    display: inline-flex;
+}
+
+.infoImageText {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 65%;
+    color: rgba(37, 37, 37, 0.842);
+}
+
+#orientation {
+    margin-top: 10px;
+}
+
+#guestLecturer {
+    background-color: lightgray;
+}
+
+.infoImageText h4 {
+    font-size: 26px;
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+
+.infoImageText h5 {
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: -15px;
+    margin-right: 50px;
+}
+
+.readMore {
+    color: blue;
+}
+
+@media only screen and (max-width: 6000px) {
+    .bannerText, h1, h3 {
+        display: hidden;
+    }
+}
+/* Start Learning Section */
+.courseOptions {
+    position: relative;
+    /* top: 16px; */
+    background-color: lightgrey;
+    width: 100%;
+    padding-bottom: 32px;
+}
+
+.startLearning {
+    padding-top: 32px;
+    text-align: center;
+    /* font-family: ; */
+    color: rgba(37, 37, 37, 0.842);
+    font-size: 40px;
+} 
+
+.subjects {
+    display: flex;
+    /* width: 100%; */
+    /* height: auto; */
+    margin-left: 72px;
+    margin-right: 72px;
+    justify-content: space-between;
+    /* padding-right: 72px; */
+    /* padding-left: 72px; */
+    /* border: 5px blue solid; */
+}
+
+.subject-detail {
+    padding-top: 32px;
+    width: 30%;
+    /* border: 5px black solid; */
+    /* margin-right: 72px; */
+    /* margin-left: 72px; */
+}
+
+.subject-img .subject-text {
+    display: inline-flex;
+    flex-direction: column;
+    /* width: 10%; */
+    /* flex-wrap: wrap; */
+}
+
+.subject-img {
+    width: 100%;
+    height: auto;
+}
+
+#wrap {
+    flex-wrap: wrap;
+}
+
+.subject-text {
+    /* border: 4px black solid; */
+    /* width: 100%; */
+    height: 140px;
+    background-color: white;
+    margin-top: -22px;
+    padding: 16px 16px 24px 16px;
+    color: rgba(37, 37, 37, 0.842);
+}
+
+.subject-text h3 {
+    font-size: 25px;
+}
+
+.subject-text h5 {
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 20px;
+    /* margin: 6px 0px 24px 16px; */
+    margin-top: -16px;
+}
+
+/* Video Section */
+.thesis-section {
+    position: relative;
+    top: -20px;
+    /* background-color: goldenrod; */
+    width: 100%;
+    height: auto;
+    border-bottom: 1px lightgray solid;
+    color: rgba(37, 37, 37, 0.842);
+    /* padding-bottom: 32px; */
+}
+
+.thesis-section h2 {
+    padding: 32px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.thesis-content {
+    width: 100%;
+    display: flex;
+}
+
+.video-section {
+    width: 60%;
+    padding: 0px 24px 24px 24px;
+    /* border: 1px black solid; */
+}
+
+.video-section h3 {
+    font-size: 32px;
+}
+
+.video-section h5 {
+    font-size: 22px;
+    font-weight: 200;
+    margin-top: -30px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.video-links {
+    width: 40%;
+    height: auto;
+}
+
+.videogroup {
+    display: flex;
+}
+
+.video-image .video-text {
+    display: inline-flex;
+}
+
+.video-image {
+    width: 35%;
+    height: auto;
+    margin: 12px;
+}
+
+#videogroup1 {
+    background-color: lightgray;
+}
+
+.video-text {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 65%;
+}
+
+.video-text h3 {
+    font-size: 26px;
+}
+
+.video-text h5 {
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: -15px;
+}
+
+/* Footer Section */
+footer {
+    /* background-color: indigo; */
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    padding: 16px 24px;
+    margin: 0px;
+    position: relative;
+    top: -22px;
+    /* border: 3px black solid; */
+}
+
+.copyFooter, .termsAndPrivacy {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 300;
+}
